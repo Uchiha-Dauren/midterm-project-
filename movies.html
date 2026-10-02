@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="kk" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Жақсы фильм таңда. IMDb мен Кинопоиск бағаларын салыстыр. Келесі оқиғаңды осы жерден тап.">
+    <title>Фильмдер — CinePick</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="alternate" hreflang="kk" href="movies.html">
+    <link rel="alternate" hreflang="en" href="movies-en.html">
+</head>
+<body>
+    <a class="skip-link" href="#main">Мазмұнға өту</a>
+    <header class="site-header">
+        <nav class="container nav-shell" aria-label="Негізгі мәзір">
+            <a class="brand" href="index.html"><span class="brand-symbol" aria-hidden="true">C</span>CINEPICK<span class="brand-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index.html">Басты бет</a></li>
+                    <li><a href="movies.html" aria-current="page">Фильмдер</a></li>
+                    <li><a href="picks.html">Біздің таңдау</a></li>
+                    <li><a href="ratings.html">Рейтингтер</a></li>
+                    <li><a href="about.html">Жоба туралы</a></li>
+            </ul>
+            <div class="language-switch" aria-label="Тіл"><a href="movies.html" lang="kk" hreflang="kk" aria-current="true">ҚАЗ</a><a href="movies-en.html" lang="en" hreflang="en">ENG</a></div>
+        </nav>
+    </header>
+    <main id="main" class="container">
+        <section class="page-heading"><p class="eyebrow">CINEPICK / Фильмдер</p><h1>Келесі оқиғаңды тап.</h1><p>12 фильм. Ғарыштан бастап сиқырлы әлемдерге дейін.</p></section>
+        <!-- Native HTML form. CSS :checked controls the visible film cards. -->
+        <form class="catalog-form">
+            <fieldset><legend>Қалаған жанрыңды таңда</legend><p class="muted filter-help">Жанрды таңдағанда сәйкес фильмдер ғана көрсетіледі.</p>
+                <input class="genre-choice" type="radio" name="genre" id="genre-all" value="all" checked>
+                <label class="genre-label" for="genre-all">Барлығы</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-scifi" value="scifi">
+                <label class="genre-label" for="genre-scifi">Ғылыми фантастика</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-animation" value="animation">
+                <label class="genre-label" for="genre-animation">Анимация</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-drama" value="drama">
+                <label class="genre-label" for="genre-drama">Драма</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-comedy" value="comedy">
+                <label class="genre-label" for="genre-comedy">Комедия</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-action" value="action">
+                <label class="genre-label" for="genre-action">Экшн</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-mystery" value="mystery">
+                <label class="genre-label" for="genre-mystery">Детектив</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-adventure" value="adventure">
+                <label class="genre-label" for="genre-adventure">Шытырман оқиға</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-thriller" value="thriller">
+                <label class="genre-label" for="genre-thriller">Триллер</label>
+                <button class="filter-reset" type="reset">Тазарту</button>
+                <div class="movie-grid"><article class="movie-card genre-scifi genre-thriller" id="film-tt1375666">
+                <div class="poster-link"><img src="assets/posters/tt1375666.jpg" alt="Бастау" width="400" height="600" loading="lazy"><span class="poster-year">2010</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Ғылыми фантастика · Триллер</p>
+                    <h3>Бастау</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.8</a><a href="https://www.kinopoisk.ru/film/447301/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.7</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Өзгенің түсіне кіре алатын маман қауіпті тапсырма алады: бұл жолы ол ойды ұрламай, санаға жаңа идея енгізуі керек.</p><p>Режиссер: Кристофер Нолан</p></details>
+                </div>
+            </article><article class="movie-card genre-scifi genre-drama" id="film-tt0816692">
+                <div class="poster-link"><img src="assets/posters/tt0816692.jpg" alt="Интерстеллар" width="400" height="600" loading="lazy"><span class="poster-year">2014</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Ғылыми фантастика · Драма</p>
+                    <h3>Интерстеллар</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.7</a><a href="https://www.kinopoisk.ru/film/258687/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.7</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Ұшқыш адамзатқа жаңа мекен іздеу үшін отбасын Жерде қалдырып, ғарышқа аттанады.</p><p>Режиссер: Кристофер Нолан</p></details>
+                </div>
+            </article><article class="movie-card genre-action genre-thriller" id="film-tt0468569">
+                <div class="poster-link"><img src="assets/posters/tt0468569.jpg" alt="Қара рыцарь" width="400" height="600" loading="lazy"><span class="poster-year">2008</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Экшн · Триллер</p>
+                    <h3>Қара рыцарь</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0468569/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 9.1</a><a href="https://www.kinopoisk.ru/film/111543/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.5</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Бэтмен Готэмді хаосқа айналдырғысы келген Джокерге қарсы тұрады. Бұл күрес оның ұстанымдарын сынайды.</p><p>Режиссер: Кристофер Нолан</p></details>
+                </div>
+            </article><article class="movie-card genre-drama" id="film-tt0111161">
+                <div class="poster-link"><img src="assets/posters/tt0111161.jpg" alt="Шоушенктен қашу" width="400" height="600" loading="lazy"><span class="poster-year">1994</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Драма</p>
+                    <h3>Шоушенктен қашу</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 9.3</a><a href="https://www.kinopoisk.ru/film/326/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 9.1</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Түрмеде танысқан екі адам ұзақ жылдар бойы достығын сақтап, үмітін үзбеуге тырысады.</p><p>Режиссер: Фрэнк Дарабонт</p></details>
+                </div>
+            </article><article class="movie-card genre-mystery genre-comedy" id="film-tt8946378">
+                <div class="poster-link"><img src="assets/posters/tt8946378.jpg" alt="Пышақтар суырылсын" width="400" height="600" loading="lazy"><span class="poster-year">2019</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Детектив · Комедия</p>
+                    <h3>Пышақтар суырылсын</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt8946378/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.9</a><a href="https://www.kinopoisk.ru/film/1188529/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Белгілі жазушының өлімін зерттеген детектив оның отбасындағы әр адамның жасыратын сыры барын байқайды.</p><p>Режиссер: Райан Джонсон</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-mystery" id="film-tt2948356">
+                <div class="poster-link"><img src="assets/posters/tt2948356.jpg" alt="Зоотопия" width="400" height="600" loading="lazy"><span class="poster-year">2016</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Анимация · Детектив</p>
+                    <h3>Зоотопия</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt2948356/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.0</a><a href="https://www.kinopoisk.ru/film/775276/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.3</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Жас қоян полицей мен айлакер түлкі жануарлар қаласындағы жұмбақ істі бірге тергейді.</p><p>Режиссер: Байрон Ховард, Рич Мур</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-comedy" id="film-tt0126029">
+                <div class="poster-link"><img src="assets/posters/tt0126029.jpg" alt="Шрек" width="400" height="600" loading="lazy"><span class="poster-year">2001</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Анимация · Комедия</p>
+                    <h3>Шрек</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0126029/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.9</a><a href="https://www.kinopoisk.ru/film/430/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Жасыл дәу мен сөзшең есек ханшайымды құтқарып, Шректің тыныш батпағын қайтару үшін жолға шығады.</p><p>Режиссер: Эндрю Адамсон, Вики Дженсон</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-adventure" id="film-tt3915174">
+                <div class="poster-link"><img src="assets/posters/tt3915174.jpg" alt="Етік киген мысық: Соңғы тілек" width="400" height="600" loading="lazy"><span class="poster-year">2022</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Анимация · Шытырман оқиға</p>
+                    <h3>Етік киген мысық: Соңғы тілек</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt3915174/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.8</a><a href="https://www.kinopoisk.ru/film/840821/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.1</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Тоғыз өмірінен біреуі ғана қалған мысық бәрін өзгерте алатын сиқырлы тілекті іздеуге аттанады.</p><p>Режиссер: Джоэл Кроуфорд</p></details>
+                </div>
+            </article><article class="movie-card genre-comedy genre-adventure" id="film-tt2278388">
+                <div class="poster-link"><img src="assets/posters/tt2278388.jpg" alt="Гранд Будапешт қонақүйі" width="400" height="600" loading="lazy"><span class="poster-year">2014</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Комедия · Шытырман оқиға</p>
+                    <h3>Гранд Будапешт қонақүйі</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt2278388/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.1</a><a href="https://www.kinopoisk.ru/film/683999/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.0</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Қонақүй қызметкері мен жас көмекшісі ұрланған сурет пен даулы мұраға байланысты оқиғалардың ортасында қалады.</p><p>Режиссер: Уэс Андерсон</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-action" id="film-tt4633694">
+                <div class="poster-link"><img src="assets/posters/tt4633694.jpg" alt="Өрмекші адам: Ғаламдар тоғысында" width="400" height="600" loading="lazy"><span class="poster-year">2018</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Анимация · Экшн</p>
+                    <h3>Өрмекші адам: Ғаламдар тоғысында</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt4633694/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.4</a><a href="https://www.kinopoisk.ru/film/920265/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Майлз Моралес жаңа қабілеттерін танып, параллель әлемдерден келген өзге Өрмекші адамдармен кездеседі.</p><p>Режиссер: Боб Персикетти, Питер Рэмзи, Родни Ротман</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-adventure" id="film-tt0245429">
+                <div class="poster-link"><img src="assets/posters/tt0245429.jpg" alt="Рухтар жетегінде" width="400" height="600" loading="lazy"><span class="poster-year">2001</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Анимация · Шытырман оқиға</p>
+                    <h3>Рухтар жетегінде</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0245429/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.6</a><a href="https://www.kinopoisk.ru/film/370/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.6</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Рухтар әлеміне тап болған қыз ата-анасын құтқарып, үйіне оралу үшін батылдық танытуы керек.</p><p>Режиссер: Хаяо Миядзаки</p></details>
+                </div>
+            </article><article class="movie-card genre-drama genre-comedy" id="film-tt0120382">
+                <div class="poster-link"><img src="assets/posters/tt0120382.jpg" alt="Труман шоуы" width="400" height="600" loading="lazy"><span class="poster-year">1998</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Драма · Комедия</p>
+                    <h3>Труман шоуы</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0120382/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.2</a><a href="https://www.kinopoisk.ru/film/4541/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.3</a></div>
+                <details class="movie-description"><summary>Сипаттамасын оқу</summary><p>Қарапайым өмір сүріп жүрген Труман айналасындағы таныс әлемде үлкен құпия барын сезе бастайды.</p><p>Режиссер: Питер Уир</p></details>
+                </div>
+            </article></div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><div><a href="index.html" class="brand footer-brand">CINEPICK<span class="brand-dot">.</span></a><p>Жақсы кино. Оңай таңдау.</p></div><div class="footer-meta"><a href="about.html#sources">Сақталған рейтингтер · 02.10.2026</a><p>Оқу жобасы · 2026</p></div></div></footer>
+</body>
+</html>
