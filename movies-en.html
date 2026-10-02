@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find a great film. Compare IMDb and Kinopoisk ratings. Discover your next story here.">
+    <title>Movies — CinePick</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="alternate" hreflang="kk" href="movies.html">
+    <link rel="alternate" hreflang="en" href="movies-en.html">
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+        <nav class="container nav-shell" aria-label="Main navigation">
+            <a class="brand" href="index-en.html"><span class="brand-symbol" aria-hidden="true">C</span>CINEPICK<span class="brand-dot">.</span></a>
+            <ul class="nav-links">
+                <li><a href="index-en.html">Home</a></li>
+                    <li><a href="movies-en.html" aria-current="page">Movies</a></li>
+                    <li><a href="picks-en.html">Our picks</a></li>
+                    <li><a href="ratings-en.html">Ratings</a></li>
+                    <li><a href="about-en.html">About</a></li>
+            </ul>
+            <div class="language-switch" aria-label="Language"><a href="movies.html" lang="kk" hreflang="kk">ҚАЗ</a><a href="movies-en.html" lang="en" hreflang="en" aria-current="true">ENG</a></div>
+        </nav>
+    </header>
+    <main id="main" class="container">
+        <section class="page-heading"><p class="eyebrow">CINEPICK / Movies</p><h1>Find your next story.</h1><p>12 films. From distant galaxies to extraordinary worlds.</p></section>
+        <!-- Native HTML form. CSS :checked controls the visible film cards. -->
+        <form class="catalog-form">
+            <fieldset><legend>Choose a genre</legend><p class="muted filter-help">Select a genre to show matching films.</p>
+                <input class="genre-choice" type="radio" name="genre" id="genre-all" value="all" checked>
+                <label class="genre-label" for="genre-all">All films</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-scifi" value="scifi">
+                <label class="genre-label" for="genre-scifi">Sci-fi</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-animation" value="animation">
+                <label class="genre-label" for="genre-animation">Animation</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-drama" value="drama">
+                <label class="genre-label" for="genre-drama">Drama</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-comedy" value="comedy">
+                <label class="genre-label" for="genre-comedy">Comedy</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-action" value="action">
+                <label class="genre-label" for="genre-action">Action</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-mystery" value="mystery">
+                <label class="genre-label" for="genre-mystery">Mystery</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-adventure" value="adventure">
+                <label class="genre-label" for="genre-adventure">Adventure</label>
+<input class="genre-choice" type="radio" name="genre" id="genre-thriller" value="thriller">
+                <label class="genre-label" for="genre-thriller">Thriller</label>
+                <button class="filter-reset" type="reset">Reset</button>
+                <div class="movie-grid"><article class="movie-card genre-scifi genre-thriller" id="film-tt1375666">
+                <div class="poster-link"><img src="assets/posters/tt1375666.jpg" alt="Inception" width="400" height="600" loading="lazy"><span class="poster-year">2010</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Sci-fi · Thriller</p>
+                    <h3>Inception</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt1375666/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.8</a><a href="https://www.kinopoisk.ru/film/447301/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.7</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A specialist who enters dreams takes on a dangerous task: plant an idea instead of stealing one.</p><p>Director: Christopher Nolan</p></details>
+                </div>
+            </article><article class="movie-card genre-scifi genre-drama" id="film-tt0816692">
+                <div class="poster-link"><img src="assets/posters/tt0816692.jpg" alt="Interstellar" width="400" height="600" loading="lazy"><span class="poster-year">2014</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Sci-fi · Drama</p>
+                    <h3>Interstellar</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0816692/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.7</a><a href="https://www.kinopoisk.ru/film/258687/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.7</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A pilot leaves his family and crosses the galaxy to search for a future for humanity.</p><p>Director: Christopher Nolan</p></details>
+                </div>
+            </article><article class="movie-card genre-action genre-thriller" id="film-tt0468569">
+                <div class="poster-link"><img src="assets/posters/tt0468569.jpg" alt="The Dark Knight" width="400" height="600" loading="lazy"><span class="poster-year">2008</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Action · Thriller</p>
+                    <h3>The Dark Knight</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0468569/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 9.1</a><a href="https://www.kinopoisk.ru/film/111543/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.5</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>Batman faces an unpredictable enemy who turns Gotham into a test of courage and principles.</p><p>Director: Christopher Nolan</p></details>
+                </div>
+            </article><article class="movie-card genre-drama" id="film-tt0111161">
+                <div class="poster-link"><img src="assets/posters/tt0111161.jpg" alt="The Shawshank Redemption" width="400" height="600" loading="lazy"><span class="poster-year">1994</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Drama</p>
+                    <h3>The Shawshank Redemption</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0111161/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 9.3</a><a href="https://www.kinopoisk.ru/film/326/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 9.1</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>Two prisoners form a lasting friendship and find ways to hold on to hope.</p><p>Director: Frank Darabont</p></details>
+                </div>
+            </article><article class="movie-card genre-mystery genre-comedy" id="film-tt8946378">
+                <div class="poster-link"><img src="assets/posters/tt8946378.jpg" alt="Knives Out" width="400" height="600" loading="lazy"><span class="poster-year">2019</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Mystery · Comedy</p>
+                    <h3>Knives Out</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt8946378/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.9</a><a href="https://www.kinopoisk.ru/film/1188529/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A detective investigates a writer’s death, discovering that everyone in the family has something to hide.</p><p>Director: Rian Johnson</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-mystery" id="film-tt2948356">
+                <div class="poster-link"><img src="assets/posters/tt2948356.jpg" alt="Zootopia" width="400" height="600" loading="lazy"><span class="poster-year">2016</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Animation · Mystery</p>
+                    <h3>Zootopia</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt2948356/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.0</a><a href="https://www.kinopoisk.ru/film/775276/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.3</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A rookie rabbit officer teams up with a clever fox to solve a mystery in a city of animals.</p><p>Director: Byron Howard, Rich Moore</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-comedy" id="film-tt0126029">
+                <div class="poster-link"><img src="assets/posters/tt0126029.jpg" alt="Shrek" width="400" height="600" loading="lazy"><span class="poster-year">2001</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Animation · Comedy</p>
+                    <h3>Shrek</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0126029/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.9</a><a href="https://www.kinopoisk.ru/film/430/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>An ogre and a talkative donkey set out to rescue a princess and reclaim a quiet swamp.</p><p>Director: Andrew Adamson, Vicky Jenson</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-adventure" id="film-tt3915174">
+                <div class="poster-link"><img src="assets/posters/tt3915174.jpg" alt="Puss in Boots: The Last Wish" width="400" height="600" loading="lazy"><span class="poster-year">2022</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Animation · Adventure</p>
+                    <h3>Puss in Boots: The Last Wish</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt3915174/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 7.8</a><a href="https://www.kinopoisk.ru/film/840821/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.1</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>Down to his last life, Puss begins a journey to find a wish that could change everything.</p><p>Director: Joel Crawford</p></details>
+                </div>
+            </article><article class="movie-card genre-comedy genre-adventure" id="film-tt2278388">
+                <div class="poster-link"><img src="assets/posters/tt2278388.jpg" alt="The Grand Budapest Hotel" width="400" height="600" loading="lazy"><span class="poster-year">2014</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Comedy · Adventure</p>
+                    <h3>The Grand Budapest Hotel</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt2278388/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.1</a><a href="https://www.kinopoisk.ru/film/683999/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.0</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A hotel concierge and his young friend become entangled in a stolen painting and a disputed inheritance.</p><p>Director: Wes Anderson</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-action" id="film-tt4633694">
+                <div class="poster-link"><img src="assets/posters/tt4633694.jpg" alt="Spider-Man: Into the Spider-Verse" width="400" height="600" loading="lazy"><span class="poster-year">2018</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Animation · Action</p>
+                    <h3>Spider-Man: Into the Spider-Verse</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt4633694/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.4</a><a href="https://www.kinopoisk.ru/film/920265/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.2</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>Miles Morales discovers his powers and meets other Spider-heroes from parallel worlds.</p><p>Director: Bob Persichetti, Peter Ramsey, Rodney Rothman</p></details>
+                </div>
+            </article><article class="movie-card genre-animation genre-adventure" id="film-tt0245429">
+                <div class="poster-link"><img src="assets/posters/tt0245429.jpg" alt="Spirited Away" width="400" height="600" loading="lazy"><span class="poster-year">2001</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Animation · Adventure</p>
+                    <h3>Spirited Away</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0245429/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.6</a><a href="https://www.kinopoisk.ru/film/370/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.6</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A young girl enters a world of spirits and must find the courage to save her parents.</p><p>Director: Hayao Miyazaki</p></details>
+                </div>
+            </article><article class="movie-card genre-drama genre-comedy" id="film-tt0120382">
+                <div class="poster-link"><img src="assets/posters/tt0120382.jpg" alt="The Truman Show" width="400" height="600" loading="lazy"><span class="poster-year">1998</span></div>
+                <div class="card-body">
+                    <p class="movie-genre">Drama · Comedy</p>
+                    <h3>The Truman Show</h3>
+                    <div class="card-ratings"><a href="https://www.imdb.com/title/tt0120382/" target="_blank" rel="noopener noreferrer"><b class="imdb-word">IMDb</b> 8.2</a><a href="https://www.kinopoisk.ru/film/4541/" target="_blank" rel="noopener noreferrer"><b class="kp-word">КП</b> 8.3</a></div>
+                <details class="movie-description"><summary>Read description</summary><p>A man begins to notice that the familiar world around him is hiding an extraordinary secret.</p><p>Director: Peter Weir</p></details>
+                </div>
+            </article></div>
+            </fieldset>
+        </form>
+    </main>
+    <footer class="site-footer"><div class="container footer-inner"><div><a href="index-en.html" class="brand footer-brand">CINEPICK<span class="brand-dot">.</span></a><p>Good films. Simple choices.</p></div><div class="footer-meta"><a href="about-en.html#sources">Saved ratings · 02 Oct 2026</a><p>Student project · 2026</p></div></div></footer>
+</body>
+</html>
