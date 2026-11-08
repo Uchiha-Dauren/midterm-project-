@@ -1,608 +1,80 @@
 <!DOCTYPE html>
-<html lang="kk" data-bs-theme="dark">
+
+<html data-bs-theme="dark" lang="kk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <meta
-        name="description"
-        content="Жақсы фильм таңда. IMDb мен Кинопоиск бағаларын салыстыр. Келесі оқиғаңды осы жерден тап."
-    >
-
-    <title>Біздің таңдау — CinePick</title>
-
-    <link
-        rel="icon"
-        type="image/svg+xml"
-        href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E"
-    >
-
-    <!-- Bootstrap через интернет -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- Наш CSS -->
-    <link rel="stylesheet" href="css/style.css">
-
-    <link rel="alternate" hreflang="kk" href="picks.html">
-    <link rel="alternate" hreflang="en" href="picks-en.html">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Жақсы фильм таңда. IMDb мен Кинопоиск бағаларын салыстыр. Келесі оқиғаңды осы жерден тап." name="description"/>
+<title>Біздің таңдау — CinePick</title>
+<link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<!-- Bootstrap через интернет -->
+<!-- Наш CSS -->
+<link href="picks.html" hreflang="kk" rel="alternate"/>
+<link href="picks-en.html" hreflang="en" rel="alternate"/>
+<link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/endterm.css" rel="stylesheet"/>
 </head>
-
 <body>
-
-    <a class="skip-link" href="#main">Мазмұнға өту</a>
-
-    <header class="site-header">
-        <nav class="container nav-shell" aria-label="Негізгі мәзір">
-
-            <a class="brand" href="index.html">
-                <span class="brand-symbol" aria-hidden="true">C</span>
-                CINEPICK
-                <span class="brand-dot">.</span>
-            </a>
-
-            <ul class="nav-links">
-                <li>
-                    <a href="index.html">Басты бет</a>
-                </li>
-
-                <li>
-                    <a href="movies.html">Фильмдер</a>
-                </li>
-
-                <li>
-                    <a href="picks.html" aria-current="page">
-                        Біздің таңдау
-                    </a>
-                </li>
-
-                <li>
-                    <a href="ratings.html">Рейтингтер</a>
-                </li>
-
-                <li>
-                    <a href="about.html">Жоба туралы</a>
-                </li>
-            </ul>
-
-            <div class="language-switch" aria-label="Тіл">
-
-                <a
-                    href="picks.html"
-                    lang="kk"
-                    hreflang="kk"
-                    aria-current="true"
-                >
-                    ҚАЗ
-                </a>
-
-                <a
-                    href="picks-en.html"
-                    lang="en"
-                    hreflang="en"
-                >
-                    ENG
-                </a>
-
-            </div>
-
-        </nav>
-    </header>
-
-
-    <main id="main" class="container">
-
-        <section class="page-heading">
-
-            <p class="eyebrow">
-                КӨРУГЕ ҰСЫНАМЫЗ
-            </p>
-
-            <h1>
-                Кешке арналған төрт оқиға.
-            </h1>
-
-            <p>
-                Ғарыш, құпия, достық және қиял.
-                Көңіл күйіңе сай фильм таңда.
-            </p>
-
-        </section>
-
-
-        <div class="static-picks">
-
-            <!-- INCEPTION -->
-
-            <article
-                class="pick-result"
-                id="pick-tt1375666"
-            >
-
-                <div class="result-poster">
-
-                    <img
-                        src="assets/posters/tt1375666.jpg"
-                        alt="Бастау"
-                        width="400"
-                        height="600"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="result-copy">
-
-                    <p class="eyebrow">
-                        01 / Біздің таңдау
-                    </p>
-
-                    <h2>
-                        Бастау
-                    </h2>
-
-                    <p class="original-title">
-                        Inception
-                    </p>
-
-                    <p class="movie-meta">
-                        2010 · 148 мин
-                    </p>
-
-                    <div class="genre-tags">
-
-                        <span class="genre-tag">
-                            Ғылыми фантастика
-                        </span>
-
-                        <span class="genre-tag">
-                            Триллер
-                        </span>
-
-                    </div>
-
-                    <p class="movie-plot">
-                        Өзгенің түсіне кіре алатын маман қауіпті
-                        тапсырма алады: бұл жолы ол ойды ұрламай,
-                        санаға жаңа идея енгізуі керек.
-                    </p>
-
-                    <p class="director-line">
-                        Режиссер
-                        <strong>Кристофер Нолан</strong>
-                    </p>
-
-                    <div class="score-grid">
-
-                        <a
-                            class="score-box"
-                            href="https://www.imdb.com/title/tt1375666/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="imdb-word">
-                                IMDb
-                            </span>
-
-                            <strong class="score-value">
-                                8.8
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-
-                        <a
-                            class="score-box"
-                            href="https://www.kinopoisk.ru/film/447301/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="kp-word">
-                                Кинопоиск
-                            </span>
-
-                            <strong class="score-value">
-                                8.7
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-                    </div>
-
-                    <p class="footnote">
-                        02.10.2026 күнгі сақталған бағалар
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- KNIVES OUT -->
-
-            <article
-                class="pick-result"
-                id="pick-tt8946378"
-            >
-
-                <div class="result-poster">
-
-                    <img
-                        src="assets/posters/tt8946378.jpg"
-                        alt="Пышақтар суырылсын"
-                        width="400"
-                        height="600"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="result-copy">
-
-                    <p class="eyebrow">
-                        02 / Біздің таңдау
-                    </p>
-
-                    <h2>
-                        Пышақтар суырылсын
-                    </h2>
-
-                    <p class="original-title">
-                        Knives Out
-                    </p>
-
-                    <p class="movie-meta">
-                        2019 · 130 мин
-                    </p>
-
-                    <div class="genre-tags">
-
-                        <span class="genre-tag">
-                            Детектив
-                        </span>
-
-                        <span class="genre-tag">
-                            Комедия
-                        </span>
-
-                    </div>
-
-                    <p class="movie-plot">
-                        Белгілі жазушының өлімін зерттеген детектив
-                        оның отбасындағы әр адамның жасыратын
-                        сыры барын байқайды.
-                    </p>
-
-                    <p class="director-line">
-                        Режиссер
-                        <strong>Райан Джонсон</strong>
-                    </p>
-
-                    <div class="score-grid">
-
-                        <a
-                            class="score-box"
-                            href="https://www.imdb.com/title/tt8946378/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="imdb-word">
-                                IMDb
-                            </span>
-
-                            <strong class="score-value">
-                                7.9
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-
-                        <a
-                            class="score-box"
-                            href="https://www.kinopoisk.ru/film/1188529/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="kp-word">
-                                Кинопоиск
-                            </span>
-
-                            <strong class="score-value">
-                                8.2
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-                    </div>
-
-                    <p class="footnote">
-                        02.10.2026 күнгі сақталған бағалар
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- ZOOTOPIA -->
-
-            <article
-                class="pick-result"
-                id="pick-tt2948356"
-            >
-
-                <div class="result-poster">
-
-                    <img
-                        src="assets/posters/tt2948356.jpg"
-                        alt="Зоотопия"
-                        width="400"
-                        height="600"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="result-copy">
-
-                    <p class="eyebrow">
-                        03 / Біздің таңдау
-                    </p>
-
-                    <h2>
-                        Зоотопия
-                    </h2>
-
-                    <p class="original-title">
-                        Zootopia
-                    </p>
-
-                    <p class="movie-meta">
-                        2016 · 108 мин
-                    </p>
-
-                    <div class="genre-tags">
-
-                        <span class="genre-tag">
-                            Анимация
-                        </span>
-
-                        <span class="genre-tag">
-                            Детектив
-                        </span>
-
-                    </div>
-
-                    <p class="movie-plot">
-                        Жас қоян полицей мен айлакер түлкі
-                        жануарлар қаласындағы жұмбақ істі
-                        бірге тергейді.
-                    </p>
-
-                    <p class="director-line">
-                        Режиссер
-                        <strong>
-                            Байрон Ховард, Рич Мур
-                        </strong>
-                    </p>
-
-                    <div class="score-grid">
-
-                        <a
-                            class="score-box"
-                            href="https://www.imdb.com/title/tt2948356/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="imdb-word">
-                                IMDb
-                            </span>
-
-                            <strong class="score-value">
-                                8.0
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-
-                        <a
-                            class="score-box"
-                            href="https://www.kinopoisk.ru/film/775276/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="kp-word">
-                                Кинопоиск
-                            </span>
-
-                            <strong class="score-value">
-                                8.3
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-                    </div>
-
-                    <p class="footnote">
-                        02.10.2026 күнгі сақталған бағалар
-                    </p>
-
-                </div>
-
-            </article>
-
-
-            <!-- SPIRITED AWAY -->
-
-            <article
-                class="pick-result"
-                id="pick-tt0245429"
-            >
-
-                <div class="result-poster">
-
-                    <img
-                        src="assets/posters/tt0245429.jpg"
-                        alt="Рухтар жетегінде"
-                        width="400"
-                        height="600"
-                        loading="lazy"
-                    >
-
-                </div>
-
-                <div class="result-copy">
-
-                    <p class="eyebrow">
-                        04 / Біздің таңдау
-                    </p>
-
-                    <h2>
-                        Рухтар жетегінде
-                    </h2>
-
-                    <p class="original-title">
-                        Spirited Away
-                    </p>
-
-                    <p class="movie-meta">
-                        2001 · 124 мин
-                    </p>
-
-                    <div class="genre-tags">
-
-                        <span class="genre-tag">
-                            Анимация
-                        </span>
-
-                        <span class="genre-tag">
-                            Шытырман оқиға
-                        </span>
-
-                    </div>
-
-                    <p class="movie-plot">
-                        Рухтар әлеміне тап болған қыз
-                        ата-анасын құтқарып, үйіне оралу үшін
-                        батылдық танытуы керек.
-                    </p>
-
-                    <p class="director-line">
-                        Режиссер
-                        <strong>
-                            Хаяо Миядзаки
-                        </strong>
-                    </p>
-
-                    <div class="score-grid">
-
-                        <a
-                            class="score-box"
-                            href="https://www.imdb.com/title/tt0245429/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="imdb-word">
-                                IMDb
-                            </span>
-
-                            <strong class="score-value">
-                                8.6
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-
-                        <a
-                            class="score-box"
-                            href="https://www.kinopoisk.ru/film/370/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-
-                            <span class="kp-word">
-                                Кинопоиск
-                            </span>
-
-                            <strong class="score-value">
-                                8.6
-                                <small>/10</small>
-                            </strong>
-
-                        </a>
-
-                    </div>
-
-                    <p class="footnote">
-                        02.10.2026 күнгі сақталған бағалар
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-    </main>
-
-
-    <footer class="site-footer">
-
-        <div class="container footer-inner">
-
-            <div>
-
-                <a
-                    href="index.html"
-                    class="brand footer-brand"
-                >
+<a class="skip-link" href="#main">Мазмұнға өту</a>
+<header class="site-header">
+<nav aria-label="Негізгі мәзір" class="container nav-shell">
+<a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol">C</span>CINEPICK<span class="brand-dot">.</span></a>
+<ul class="nav-links" id="main-nav"><li><a href="index.html">Басты бет</a></li>
+<li><a href="movies.html">Фильмдер</a></li>
+<li><a aria-current="page" href="picks.html">Біздің таңдау</a></li>
+<li><a href="ratings.html">Рейтингтер</a></li>
+<li><a href="about.html">Жоба туралы</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Тақырыпты ауыстыру" aria-pressed="false" class="theme-toggle" type="button">☀</button>
+<div aria-label="Тіл" class="language-switch"><a aria-current="true" href="picks.html" hreflang="kk" lang="kk">ҚАЗ</a><a href="picks-en.html" hreflang="en" lang="en">ENG</a></div>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Мәзірді ашу" class="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+</div>
+</nav>
+</header>
+<main class="container" id="main">
+<section class="page-heading"><p class="eyebrow">БҮГІНГІ КИНОКЕШ</p><h1>Таңдауды бізге қалдыр.</h1><p>Жанр мен уақытыңды таңда. Қалғанын CinePick шешсін.</p></section>
+<div class="picker-layout">
+<form class="filter-panel" id="picker-form">
+<h2>Не көргің келеді?</h2>
+<div class="picker-field"><label class="form-label" for="pick-genre">Жанр</label><select class="form-select" id="pick-genre"><option value="all">Кез келген жанр</option><option value="scifi">Ғылыми фантастика</option><option value="animation">Анимация</option><option value="drama">Драма</option><option value="comedy">Комедия</option><option value="action">Экшн</option><option value="mystery">Детектив</option><option value="adventure">Шытырман оқиға</option><option value="thriller">Триллер</option></select></div>
+<div class="picker-field"><label class="form-label" for="pick-runtime">Ең ұзақ уақыт</label><select class="form-select" id="pick-runtime"><option value="999">Уақыт шектеусіз</option><option value="100">100 минутқа дейін</option><option value="120">120 минутқа дейін</option><option value="150">150 минутқа дейін</option></select></div>
+<div class="picker-field"><label class="form-label" for="pick-rating">IMDb ең төмен бағасы</label><select class="form-select" id="pick-rating"><option value="0">Кез келген баға</option><option value="8">8.0+</option><option value="8.5">8.5+</option><option value="9">9.0+</option></select></div>
+<button class="btn btn-accent w-100" type="submit">Маған фильм таңда </button>
+<p class="footnote mt-3 mb-0">Біздің 12 фильмдік топтамадан кездейсоқ таңдау.</p>
+</form>
+<div aria-live="polite" id="picker-result"><div class="pick-result picker-welcome"><div class="result-poster"><img alt="Интерстеллар" height="600" src="assets/posters/tt0816692.jpg" width="400"/></div><div class="result-copy"><p class="eyebrow">КИНОКЕШ ОСЫНДА БАСТАЛАДЫ</p><h2>Бір батырма. Бір жақсы фильм.</h2><p class="movie-plot">Қалауыңды белгілеп, батырманы бас. Ұнаған фильмді таңдаулыларға сақтауға болады.</p><span class="genre-tag">12 фильм · 8 жанр</span></div></div></div>
+</div>
+<section class="section-heading"><div><p class="eyebrow">РЕДАКЦИЯ ТАҢДАУЫ</p><h2>Төрт ерекше оқиға.</h2><p class="muted">Әр көңіл күйге бір оқиға.</p></div></section>
+<div class="static-picks"><article class="pick-result" id="pick-tt1375666"><div class="result-poster"><img alt="Бастау" height="600" loading="lazy" src="assets/posters/tt1375666.jpg" width="400"/></div><div class="result-copy"><p class="eyebrow">01 / Біздің таңдау</p><h2>Бастау</h2><p class="movie-meta">2010 · 148 мин</p><div class="genre-tags"><span class="genre-tag">Ғылыми фантастика</span><span class="genre-tag">Триллер</span></div><p class="movie-plot">Өзгенің түсіне кіре алатын маман қауіпті тапсырма алады: бұл жолы ол ойды ұрламай, санаға жаңа идея енгізуі керек.</p><p class="director-line">Режиссер<strong>Christopher Nolan</strong></p><div class="score-grid"><a class="score-box" href="https://www.imdb.com/title/tt1375666/" rel="noopener noreferrer" target="_blank"><span class="imdb-word">IMDb</span><strong class="score-value">8.8<small> /10</small></strong></a><a class="score-box" href="https://www.kinopoisk.ru/film/447301/" rel="noopener noreferrer" target="_blank"><span class="kp-word">Кинопоиск</span><strong class="score-value">8.7<small> /10</small></strong></a></div><p class="footnote">Сақталған рейтингтер · 02.10.2026</p></div></article><article class="pick-result" id="pick-tt8946378"><div class="result-poster"><img alt="Пышақтар суырылсын" height="600" loading="lazy" src="assets/posters/tt8946378.jpg" width="400"/></div><div class="result-copy"><p class="eyebrow">02 / Біздің таңдау</p><h2>Пышақтар суырылсын</h2><p class="movie-meta">2019 · 130 мин</p><div class="genre-tags"><span class="genre-tag">Детектив</span><span class="genre-tag">Комедия</span></div><p class="movie-plot">Белгілі жазушының өлімін зерттеген детектив оның отбасындағы әр адамның жасыратын сыры барын байқайды.</p><p class="director-line">Режиссер<strong>Rian Johnson</strong></p><div class="score-grid"><a class="score-box" href="https://www.imdb.com/title/tt8946378/" rel="noopener noreferrer" target="_blank"><span class="imdb-word">IMDb</span><strong class="score-value">7.9<small> /10</small></strong></a><a class="score-box" href="https://www.kinopoisk.ru/film/1188529/" rel="noopener noreferrer" target="_blank"><span class="kp-word">Кинопоиск</span><strong class="score-value">8.2<small> /10</small></strong></a></div><p class="footnote">Сақталған рейтингтер · 02.10.2026</p></div></article><article class="pick-result" id="pick-tt2948356"><div class="result-poster"><img alt="Зоотопия" height="600" loading="lazy" src="assets/posters/tt2948356.jpg" width="400"/></div><div class="result-copy"><p class="eyebrow">03 / Біздің таңдау</p><h2>Зоотопия</h2><p class="movie-meta">2016 · 108 мин</p><div class="genre-tags"><span class="genre-tag">Анимация</span><span class="genre-tag">Детектив</span></div><p class="movie-plot">Жас қоян полицей мен айлакер түлкі жануарлар қаласындағы жұмбақ істі бірге тергейді.</p><p class="director-line">Режиссер<strong>Byron Howard, Rich Moore</strong></p><div class="score-grid"><a class="score-box" href="https://www.imdb.com/title/tt2948356/" rel="noopener noreferrer" target="_blank"><span class="imdb-word">IMDb</span><strong class="score-value">8.0<small> /10</small></strong></a><a class="score-box" href="https://www.kinopoisk.ru/film/775276/" rel="noopener noreferrer" target="_blank"><span class="kp-word">Кинопоиск</span><strong class="score-value">8.3<small> /10</small></strong></a></div><p class="footnote">Сақталған рейтингтер · 02.10.2026</p></div></article><article class="pick-result" id="pick-tt0245429"><div class="result-poster"><img alt="Рухтар жетегінде" height="600" loading="lazy" src="assets/posters/tt0245429.jpg" width="400"/></div><div class="result-copy"><p class="eyebrow">04 / Біздің таңдау</p><h2>Рухтар жетегінде</h2><p class="movie-meta">2001 · 124 мин</p><div class="genre-tags"><span class="genre-tag">Анимация</span><span class="genre-tag">Шытырман оқиға</span></div><p class="movie-plot">Рухтар әлеміне тап болған қыз ата-анасын құтқарып, үйіне оралу үшін батылдық танытуы керек.</p><p class="director-line">Режиссер<strong>Hayao Miyazaki</strong></p><div class="score-grid"><a class="score-box" href="https://www.imdb.com/title/tt0245429/" rel="noopener noreferrer" target="_blank"><span class="imdb-word">IMDb</span><strong class="score-value">8.6<small> /10</small></strong></a><a class="score-box" href="https://www.kinopoisk.ru/film/370/" rel="noopener noreferrer" target="_blank"><span class="kp-word">Кинопоиск</span><strong class="score-value">8.6<small> /10</small></strong></a></div><p class="footnote">Сақталған рейтингтер · 02.10.2026</p></div></article></div>
+</main>
+<footer class="site-footer">
+<div class="container footer-inner">
+<div>
+<a class="brand footer-brand" href="index.html">
                     CINEPICK
                     <span class="brand-dot">.</span>
-                </a>
-
-                <p>
+</a>
+<p>
                     Жақсы кино. Оңай таңдау.
                 </p>
-
-            </div>
-
-
-            <div class="footer-meta">
-
-                <a href="about.html#sources">
+</div>
+<div class="footer-meta">
+<a href="about.html#sources">
                     Сақталған рейтингтер · 02.10.2026
                 </a>
-
-                <p>
+<p>
                     Оқу жобасы · 2026
                 </p>
-
-            </div>
-
-        </div>
-
-    </footer>
-
-    <!-- Bootstrap JS -->
-    <script
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js">
-    </script>
-
+</div>
+</div>
+</footer>
+<!-- Bootstrap JS -->
+<div aria-atomic="true" aria-live="polite" class="toast-area" role="status"></div>
+<script defer="" src="vendor/jquery-3.7.1.min.js"></script>
+<script defer="" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="js/data.js"></script>
+<script defer="" src="js/app.js"></script>
+<script defer="" src="js/picks.js"></script>
 </body>
 </html>

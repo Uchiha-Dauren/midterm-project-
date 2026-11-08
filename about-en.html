@@ -1,37 +1,70 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+
+<html data-bs-theme="dark" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find a great film. Compare IMDb and Kinopoisk ratings. Discover your next story here.">
-    <title>About — CinePick</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E">
-    <link rel="stylesheet" href="vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="alternate" hreflang="kk" href="about.html">
-    <link rel="alternate" hreflang="en" href="about-en.html">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Find a great film. Compare IMDb and Kinopoisk ratings. Discover your next story here." name="description"/>
+<title>About — CinePick</title>
+<link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="about.html" hreflang="kk" rel="alternate"/>
+<link href="about-en.html" hreflang="en" rel="alternate"/>
+<link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/endterm.css" rel="stylesheet"/>
+<link href="css/about.css" rel="stylesheet"/>
 </head>
 <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header">
-        <nav class="container nav-shell" aria-label="Main navigation">
-            <a class="brand" href="index-en.html"><span class="brand-symbol" aria-hidden="true">C</span>CINEPICK<span class="brand-dot">.</span></a>
-            <ul class="nav-links">
-                <li><a href="index-en.html">Home</a></li>
-                    <li><a href="movies-en.html">Movies</a></li>
-                    <li><a href="picks-en.html">Our picks</a></li>
-                    <li><a href="ratings-en.html">Ratings</a></li>
-                    <li><a href="about-en.html" aria-current="page">About</a></li>
-            </ul>
-            <div class="language-switch" aria-label="Language"><a href="about.html" lang="kk" hreflang="kk">ҚАЗ</a><a href="about-en.html" lang="en" hreflang="en" aria-current="true">ENG</a></div>
-        </nav>
-    </header>
-    <main id="main" class="container">
-        <section class="about-intro row g-4"><div class="col-lg-7"><p class="eyebrow">A LITTLE ABOUT US</p><h1>Less searching.
-More cinema.</h1><p class="hero-description">CinePick makes choosing a movie easier. Browse the collection by genre, compare two ratings and find a story you like.</p></div><div class="col-lg-5 about-mark" aria-hidden="true"><div class="brand-seal"><span>CINE</span><span>PICK<span class="yellow-period">.</span></span><small>EST. 2026</small></div></div></section>
-        <section class="section-space about-steps"><h2>How does it work?</h2><ol class="row g-4 list-unstyled mt-2"><li class="col-md-4"><span class="step-number">01</span><h3>Explore the collection</h3><p>Choose a genre to browse matching films.</p></li><li class="col-md-4"><span class="step-number">02</span><h3>Compare the ratings</h3><p>See how IMDb and Kinopoisk audiences rate it.</p></li><li class="col-md-4"><span class="step-number">03</span><h3>Explore our picks</h3><p>Choose one of four hand-picked films.</p></li></ol></section>
-        <section id="sources" class="source-section row g-4"><div class="col-lg-4"><h2>Where do the ratings come from?</h2></div><div class="col-lg-8"><p>IMDb and Kinopoisk ratings were checked on 2 October 2026 and added to these pages. They do not update automatically. Use the links beside each film to open its source.</p><p class="footnote">CinePick is not affiliated with IMDb or Kinopoisk. Poster rights belong to their owners. Kazakh titles are translations for this project.</p><h3>Student project</h3><p>Built with HTML5, CSS3 and Bootstrap CSS. Kazakh and English versions use separate HTML pages.</p></div></section>
-    </main>
-    <footer class="site-footer"><div class="container footer-inner"><div><a href="index-en.html" class="brand footer-brand">CINEPICK<span class="brand-dot">.</span></a><p>Good films. Simple choices.</p></div><div class="footer-meta"><a href="about-en.html#sources">Saved ratings · 02 Oct 2026</a><p>Student project · 2026</p></div></div></footer>
+<a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header">
+<nav aria-label="Main navigation" class="container nav-shell">
+<a class="brand" href="index-en.html"><span aria-hidden="true" class="brand-symbol">C</span>CINEPICK<span class="brand-dot">.</span></a>
+<ul class="nav-links" id="main-nav"><li><a href="index-en.html">Home</a></li>
+<li><a href="movies-en.html">Movies</a></li>
+<li><a href="picks-en.html">Our picks</a></li>
+<li><a href="ratings-en.html">Ratings</a></li>
+<li><a aria-current="page" href="about-en.html">About</a></li></ul>
+<div class="nav-actions">
+<button aria-label="Switch theme" aria-pressed="false" class="theme-toggle" type="button">☀</button>
+<div aria-label="Language" class="language-switch"><a href="about.html" hreflang="kk" lang="kk">ҚАЗ</a><a aria-current="true" href="about-en.html" hreflang="en" lang="en">ENG</a></div>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Open navigation" class="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+</div>
+</nav>
+</header>
+<main class="container" id="main">
+<section class="about-intro row g-4"><div class="col-lg-7"><p class="eyebrow">A LITTLE ABOUT US</p><h1>Less searching.
+More cinema.</h1><p class="hero-description">CinePick makes choosing a movie easier. Browse the collection by genre, compare two ratings and find a story you like.</p></div><div aria-hidden="true" class="col-lg-5 about-mark"><div class="brand-seal"><span>CINE</span><span>PICK<span class="yellow-period">.</span></span><small>EST. 2026</small></div></div></section>
+<section class="section-space about-steps"><h2>How does it work?</h2><ol class="row g-4 list-unstyled mt-2"><li class="col-md-4"><span class="step-number">01</span><h3>Explore the collection</h3><p>Choose a genre to browse matching films.</p></li><li class="col-md-4"><span class="step-number">02</span><h3>Compare the ratings</h3><p>See how IMDb and Kinopoisk audiences rate it.</p></li><li class="col-md-4"><span class="step-number">03</span><h3>Explore our picks</h3><p>Choose one of four hand-picked films.</p></li></ol></section>
+<section aria-labelledby="feedback-heading" class="feedback-section" id="feedback">
+<div class="feedback-intro"><p class="eyebrow">YOUR NEXT REVIEW</p><h2 id="feedback-heading">A good film deserves a conversation.</h2><p>Tell us which film you chose and what you thought. Your perspective can make a movie night even better.</p><p class="small">This is a student demo. Your form is checked in this browser only; nothing is sent or saved.</p></div>
+<form class="feedback-form" id="feedback-form" novalidate="">
+<div class="feedback-fields">
+<div class="form-field"><label class="form-label" for="feedback-name">Your name</label><input aria-describedby="feedback-name-error" aria-invalid="false" aria-required="true" autocomplete="name" class="form-control" data-validate="" id="feedback-name" name="name" type="text"/><p aria-live="polite" class="field-error" id="feedback-name-error"></p></div>
+<div class="form-field"><label class="form-label" for="feedback-email">Email address</label><input aria-describedby="feedback-email-error" aria-invalid="false" aria-required="true" autocomplete="email" class="form-control" data-validate="" id="feedback-email" name="email" placeholder="name@example.com" type="email"/><p aria-live="polite" class="field-error" id="feedback-email-error"></p></div>
+<div class="form-field"><label class="form-label" for="feedback-movie">Film</label><select aria-describedby="feedback-movie-error" aria-invalid="false" aria-required="true" class="form-select" data-validate="" id="feedback-movie" name="movie"><option value="">Choose a film</option></select><p aria-live="polite" class="field-error" id="feedback-movie-error"></p></div>
+<div class="form-field"><label class="form-label" for="feedback-rating">Your rating · 1–10</label><input aria-describedby="feedback-rating-error" aria-invalid="false" aria-required="true" class="form-control" data-validate="" id="feedback-rating" inputmode="numeric" max="10" min="1" name="rating" placeholder="8" step="1" type="number"/><p aria-live="polite" class="field-error" id="feedback-rating-error"></p></div>
+<div class="form-field full-width"><div class="message-label"><label class="form-label" for="feedback-message">Your review</label><span class="character-count" id="message-count">0 / 500</span></div><textarea aria-describedby="message-hint message-count feedback-message-error" aria-invalid="false" aria-required="true" class="form-control" data-validate="" id="feedback-message" name="message" placeholder="What stayed with you after the film?" rows="4"></textarea><small class="muted" id="message-hint">Write 20–500 characters.</small><p aria-live="polite" class="field-error" id="feedback-message-error"></p></div>
+<div class="form-field full-width"><label class="consent-label" for="feedback-consent"><input aria-describedby="feedback-consent-error" aria-invalid="false" aria-required="true" data-validate="" id="feedback-consent" name="consent" type="checkbox"/><span>I understand this is a demo and my review will not be sent or saved.</span></label><p aria-live="polite" class="field-error" id="feedback-consent-error"></p></div>
+</div>
+<button class="btn btn-accent" type="submit">Check my review </button>
+<div class="feedback-success" id="feedback-success" role="status" tabindex="-1"><strong>Your review is valid!</strong><p>All fields passed the checks. This demo has not sent or saved your review.</p></div>
+</form>
+</section>
+<section aria-labelledby="faq-heading" class="faq-section"><div><p class="eyebrow">GOOD TO KNOW</p><h2 id="faq-heading">A few useful answers.</h2></div><div class="faq-list">
+<article class="faq-item"><h3><button aria-controls="faq-answer-1" aria-expanded="false" class="faq-question" id="faq-question-1" type="button">Can I watch films on CinePick?<span aria-hidden="true">+</span></button></h3><div aria-labelledby="faq-question-1" class="faq-answer" id="faq-answer-1" role="region"><p>CinePick helps you choose a film. It does not stream movies. Open IMDb or Kinopoisk from a film card to explore the original listing.</p></div></article>
+<article class="faq-item"><h3><button aria-controls="faq-answer-2" aria-expanded="false" class="faq-question" id="faq-question-2" type="button">Are the ratings live?<span aria-hidden="true">+</span></button></h3><div aria-labelledby="faq-question-2" class="faq-answer" id="faq-answer-2" role="region"><p>No. These are the saved ratings from our midterm collection, dated 2 October 2026. Use the source links to see each platform’s current rating.</p></div></article>
+<article class="faq-item"><h3><button aria-controls="faq-answer-3" aria-expanded="false" class="faq-question" id="faq-question-3" type="button">Where are my saved films kept?<span aria-hidden="true">+</span></button></h3><div aria-labelledby="faq-question-3" class="faq-answer" id="faq-answer-3" role="region"><p>Your saved films stay in this browser using localStorage. They are shared between the Kazakh and English pages on the same website. Clearing browser data removes the list.</p></div></article>
+<article class="faq-item"><h3><button aria-controls="faq-answer-4" aria-expanded="false" class="faq-question" id="faq-question-4" type="button">How does the film picker work?<span aria-hidden="true">+</span></button></h3><div aria-labelledby="faq-question-4" class="faq-answer" id="faq-answer-4" role="region"><p>Choose your preferred genre, maximum runtime and minimum IMDb score. CinePick selects a random film from the matching titles in our 12-film collection.</p></div></article>
+</div></section>
+<section class="source-section row g-4" id="sources"><div class="col-lg-4"><h2>Where do the ratings come from?</h2></div><div class="col-lg-8"><p>IMDb and Kinopoisk ratings were checked on 2 October 2026 and added to these pages. They do not update automatically. Use the links beside each film to open its source.</p><p class="footnote">CinePick is not affiliated with IMDb or Kinopoisk. Poster rights belong to their owners. Kazakh titles are translations for this project.</p><h3>Student project</h3><p>Our endterm continues the same CinePick project with HTML5, CSS3, Bootstrap, JavaScript and jQuery. The five core pages remain available in Kazakh and English.</p></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="index-en.html">CINEPICK<span class="brand-dot">.</span></a><p>Good films. Simple choices.</p></div><div class="footer-meta"><a href="about-en.html#sources">Saved ratings · 02 Oct 2026</a><p>Student project · 2026</p></div></div></footer>
+<div aria-atomic="true" aria-live="polite" class="toast-area" role="status"></div>
+<script defer="" src="vendor/jquery-3.7.1.min.js"></script>
+<script defer="" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="js/data.js"></script>
+<script defer="" src="js/app.js"></script>
+<script defer="" src="js/validation.js"></script>
+<script defer="" src="js/jquery-features.js"></script>
 </body>
 </html>
