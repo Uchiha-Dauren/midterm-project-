@@ -181,7 +181,9 @@ Course: Web Development
 
 Project: Endterm Project
 
-Team members: [Add team member names]
+Team members: Dauren , Iskander , Nurzhan 
+
+Group: SE - 2524 
 
 ## Conclusion
 
