@@ -1,4 +1,3 @@
-//movie genr
 const movies = [
   {
     "id": "tt1375666",

@@ -1,4 +1,3 @@
-//wach list local storage
 const isEnglish = document.documentElement.lang === 'en';
 const favoriteKey = 'cinepick-favorites';
 let favoriteIds = [];

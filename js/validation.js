@@ -1,4 +1,3 @@
-//check form
 const feedbackForm = document.getElementById('feedback-form');
 
 function validateFeedbackField(field) {
@@ -53,7 +52,6 @@ if (feedbackForm) {
         event.preventDefault();
         submitted = true;
         let firstInvalid = null;
-        // Check every field, so a single submit displays all useful corrections.
         for (const field of fields) {
             if (!showFieldError(field) && !firstInvalid) firstInvalid = field;
         }

@@ -1,4 +1,3 @@
-//random movie main list
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.home-grid .movie-card').forEach(card => {
         const id = card.id.replace('film-', '');

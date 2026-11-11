@@ -1,4 +1,3 @@
-//search sorting
 let savedOnly = new URLSearchParams(window.location.search).get('view') === 'saved';
 const movieGrid = document.getElementById('movie-grid');
 const searchInput = document.getElementById('movie-search');
@@ -11,7 +10,6 @@ function createMovieCard(movie) {
     const saved = isFavorite(movie.id);
     card.className = 'movie-card';
     card.id = 'film-' + movie.id;
-    // This template contains only the trusted film data from data.js.
     card.innerHTML = `
         <div class="card-poster">
             <a class="poster-link" href="#film-${movie.id}" aria-label="${getMovieTitle(movie)}">
