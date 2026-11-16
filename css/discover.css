@@ -1,0 +1,39 @@
+.discover-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 26px; }
+.discover-heading > div:first-child { max-width: 710px; }
+.discover-heading h1 { max-width: 600px; }
+.discover-heading p:last-child { margin-bottom: 0; }
+.discover-heading .btn { white-space: nowrap; flex-shrink: 0; margin-bottom: 5px; }
+.discover-source-bar { display: flex; flex-wrap: wrap; gap: 8px 25px; justify-content: space-between; align-items: center; padding: 16px 0 22px; margin-bottom: 20px; border-bottom: 1px solid var(--line); font-size: .8125rem; color: var(--muted); }
+.discover-source-bar p { margin: 0; }
+.discover-source-bar a { color: var(--text); text-decoration: underline; text-underline-offset: 4px; }
+.discover-status-dot { display: inline-block; height: 7px; width: 7px; border-radius: 50%; background: var(--accent); margin-right: 8px; }
+.discover-controls { grid-template-columns: 1.5fr 1.1fr .9fr .8fr 1fr; gap: 14px; }
+.discover-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 24px; margin-bottom: 30px; }
+.discover-card { display: flex; flex-direction: column; min-width: 0; border: 1px solid var(--line); border-radius: 12px; overflow: hidden; background: var(--panel); }
+.discover-cover { position: relative; aspect-ratio: 16/9; background: var(--surface); overflow: hidden; }
+.discover-cover img { position: absolute; width: 100%; height: 100%; object-fit: cover; inset: 0; }
+.discover-placeholder { display: flex; align-items: center; justify-content: center; height: 100%; padding: 28px; text-align: center; font-size: 1.6rem; font-weight: 800; color: var(--muted); }
+.discover-year { position: absolute; z-index: 1; bottom: 12px; left: 14px; color: #fff; background: #14171be6; border: 1px solid #ffffff25; padding: 3px 9px; border-radius: 5px; font-size: .75rem; }
+.discover-card-body { display: flex; flex-direction: column; flex: 1; padding: 20px; }
+.discover-director { margin-bottom: 5px; color: var(--muted); font-size: .75rem; }
+.discover-card h2 { font-size: 1.25rem; line-height: 1.4; letter-spacing: -.025em; margin-bottom: 13px; overflow-wrap: anywhere; }
+.discover-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 10px; font-size: .8125rem; color: var(--muted); padding-bottom: 16px; }
+.discover-score { color: var(--accent); }
+.discover-description { border-top: 1px solid var(--line); padding-top: 13px; font-size: .8125rem; margin-bottom: 18px; }
+.discover-description summary { cursor: pointer; color: var(--text); }
+.discover-description p { color: var(--muted); margin-top: 12px; margin-bottom: 0; line-height: 1.8; overflow-wrap: anywhere; }
+.discover-original { font-size: .875rem; }
+.discover-add { margin-top: auto; min-height: 42px; padding: 9px 13px; font-size: .8125rem; }
+.discover-state { margin-bottom: 35px; padding: 62px 24px; }
+.discover-state .btn { margin-top: 10px; }
+.discover-state[data-state="loading"]::before { content: ''; display: block; width: 32px; height: 32px; margin: 0 auto 18px; border: 3px solid var(--line); border-top-color: var(--accent); border-radius: 50%; animation: discover-spin 1s linear infinite; }
+.discover-pagination { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 18px; margin: 5px 0 35px; }
+.discover-pagination .btn { min-height: 42px; padding: 9px 18px; font-size: .875rem; }
+.discover-page-number { min-width: 80px; text-align: center; font-size: .875rem; color: var(--muted); }
+.discover-footnote { padding-bottom: 30px; font-size: .8125rem; line-height: 1.7; color: var(--muted); }
+.discover-footnote a { text-decoration: underline; text-underline-offset: 4px; color: var(--text); }
+@keyframes discover-spin { to { transform: rotate(360deg); } }
+@media (max-width: 1100px) { .discover-controls { grid-template-columns: repeat(3, minmax(0, 1fr)); } .discover-controls .search-field { grid-column: span 2; } }
+@media (max-width: 850px) { .discover-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .discover-heading { align-items: flex-start; flex-direction: column; gap: 20px; } }
+@media (max-width: 575px) { .discover-controls { grid-template-columns: 1fr 1fr; gap: 15px; padding: 20px; } .discover-controls > :last-child { grid-column: span 2; } .discover-grid { grid-template-columns: 1fr; gap: 22px; } .discover-pagination { gap: 12px; } .discover-pagination .btn { padding: 9px 13px; } }
+@media (prefers-reduced-motion: reduce) { .discover-state[data-state="loading"]::before { animation: none; } }

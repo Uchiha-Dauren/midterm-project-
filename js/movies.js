@@ -1,4 +1,3 @@
-// One data array powers search, filters, sorting and the watchlist.
 let savedOnly = new URLSearchParams(window.location.search).get('view') === 'saved';
 const movieGrid = document.getElementById('movie-grid');
 const searchInput = document.getElementById('movie-search');
