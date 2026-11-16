@@ -1,4 +1,4 @@
-// Keep the midterm hero and four hand-picked cards, adding useful interactions.
+//random movie main list
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.home-grid .movie-card').forEach(card => {
         const id = card.id.replace('film-', '');

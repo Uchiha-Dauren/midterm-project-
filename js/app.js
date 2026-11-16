@@ -1,4 +1,4 @@
-// Shared behavior used by all five pages. No build step is needed.
+//wach list local storage
 const isEnglish = document.documentElement.lang === 'en';
 const favoriteKey = 'cinepick-favorites';
 let favoriteIds = [];

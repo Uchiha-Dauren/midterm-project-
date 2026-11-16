@@ -1,4 +1,4 @@
-// The original midterm collection. Scores are saved snapshots, not live ratings.
+//movie genr
 const movies = [
   {
     "id": "tt1375666",

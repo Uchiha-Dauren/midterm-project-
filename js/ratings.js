@@ -1,3 +1,4 @@
+//list poling
 const ratingSearch = document.getElementById('rating-search');
 const ratingSort = document.getElementById('rating-sort');
 

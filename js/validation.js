@@ -1,4 +1,4 @@
-// The form is a local demonstration: validation never sends or stores personal data.
+//check form
 const feedbackForm = document.getElementById('feedback-form');
 
 function validateFeedbackField(field) {

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="kk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Жақсы фильм таңда. IMDb мен Кинопоиск бағаларын салыстыр. Келесі оқиғаңды осы жерден тап." name="description"/>
+<title>Жаңалық ашу — CinePick</title>
+<link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="discover.html" hreflang="kk" rel="alternate"/>
+<link href="discover-en.html" hreflang="en" rel="alternate"/>
+<link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/endterm.css" rel="stylesheet"/>
+<link href="css/discover.css" rel="stylesheet"/>
+<link href="css/final.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Мазмұнға өту</a>
+<header class="site-header">
+<nav aria-label="Негізгі мәзір" class="container nav-shell">
+<a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol">C</span>CINEPICK<span class="brand-dot">.</span></a>
+<ul class="nav-links" id="main-nav"><li><a href="index.html">Басты бет</a></li>
+<li><a href="movies.html">Фильмдер</a></li>
+<li><a href="picks.html">Біздің таңдау</a></li>
+<li><a href="ratings.html">Рейтингтер</a></li>
+<li><a aria-current="page" href="discover.html">Ghibli</a></li>
+<li><a href="journal.html">Күнделік</a></li>
+<li><a href="about.html">Біз туралы</a></li>
+</ul>
+<div class="nav-actions">
+<button aria-label="Тақырыпты ауыстыру" aria-pressed="false" class="theme-toggle" type="button">☀</button>
+<div aria-label="Тіл" class="language-switch"><a aria-current="true" href="discover.html" hreflang="kk" lang="kk">ҚАЗ</a><a href="discover-en.html" hreflang="en" lang="en">ENG</a></div>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Мәзірді ашу" class="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+</div>
+</nav>
+</header>
+<main class="container" id="main">
+<section class="page-heading discover-heading"><div><p class="eyebrow">CINEPICK / STUDIO GHIBLI</p><h1>Қиялға толы әлемге қадам бас.</h1><p>Studio Ghibli фильмдерін шолып, өз күнделігіңе қос. Деректер ашық API-дан жүктеледі.</p></div><button type="button" class="btn btn-outline" id="discover-refresh">Топтаманы жаңарту</button></section>
+<div class="discover-source-bar"><p><span aria-hidden="true" class="discover-status-dot"></span><span id="discover-source" role="status" aria-live="polite">Жүктелуде…</span></p><a href="https://ghibliapi.vercel.app/" target="_blank" rel="noopener noreferrer">Дереккөзі: Studio Ghibli API ↗</a></div>
+<form class="catalog-controls discover-controls" id="discover-controls" role="search" hidden>
+<div class="search-field"><label class="form-label" for="discover-search">Фильм іздеу</label><input type="search" class="form-control" id="discover-search" placeholder="Атауы немесе режиссері…" autocomplete="off" maxlength="150"></div>
+<div><label class="form-label" for="discover-director">Режиссер</label><select class="form-select" id="discover-director"><option value="all">Барлық режиссер</option></select></div>
+<div><label class="form-label" for="discover-decade">Шыққан жылы</label><select class="form-select" id="discover-decade"><option value="all">Барлық жыл</option></select></div>
+<div><label class="form-label" for="discover-score">RT бағасы</label><select class="form-select" id="discover-score"><option value="0">Барлығы</option><option value="80">80%+</option><option value="90">90%+</option><option value="95">95%+</option></select></div>
+<div><label class="form-label" for="discover-sort">Сұрыптау</label><select class="form-select" id="discover-sort"><option value="score">Жоғары баға</option><option value="newest">Жаңа фильмдер</option><option value="shortest">Қысқа фильмдер</option><option value="title">Атауы A–Z</option></select></div>
+</form>
+<div class="results-line" id="discover-results" hidden><p id="discover-count" role="status" aria-live="polite"></p><button class="text-link" id="discover-reset" type="button">Сүзгілерді тазалау</button></div>
+<div class="empty-state discover-state" id="discover-state" role="status" aria-live="polite" data-state="loading"><h2 id="discover-state-title">Оқиғалар жүктелуде…</h2><p id="discover-state-text">Studio Ghibli топтамасын алып жатырмыз.</p><button type="button" class="btn btn-accent" id="discover-retry" hidden>Қайталау</button></div>
+<div class="discover-grid" id="discover-grid" aria-busy="true"></div>
+<nav class="discover-pagination" id="discover-pagination" aria-label="Топтама беттері" hidden><button class="btn btn-outline" id="discover-previous" type="button">← Алдыңғы</button><span class="discover-page-number" id="discover-page" role="status" aria-live="polite"></span><button class="btn btn-outline" id="discover-next" type="button">Келесі →</button></nav>
+<p class="discover-footnote">Атаулар мен сипаттамалар дереккөздің тілінде көрсетіледі. RT — API сақтаған Rotten Tomatoes бағасы; ол нақты уақыттағы рейтинг емес. Бұл — Studio Ghibli студиясының ресми емес, қауымдастық API-ы. Интернетсіз біздің <a href="movies.html">негізгі каталогты қара.</a></p>
+<noscript><p>Фильмдерді жүктеу үшін JavaScript қосыңыз.</p></noscript>
+</main>
+<footer class="site-footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="index.html">CINEPICK<span class="brand-dot">.</span></a><p>Жақсы кино. Оңай таңдау.</p></div><div class="footer-meta"><a href="about.html#sources">Сақталған рейтингтер · 02.10.2026</a><p>Оқу жобасы · 2026</p></div></div></footer>
+<div aria-atomic="true" aria-live="polite" class="toast-area" role="status"></div>
+<script defer="" src="vendor/jquery-3.7.1.min.js"></script>
+<script defer="" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="js/data.js"></script>
+<script defer="" src="js/app.js"></script>
+<script defer="" src="js/film.js"></script>
+<script defer="" src="js/discover.js"></script>
+</body>
+</html>
