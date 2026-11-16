@@ -1,4 +1,3 @@
-//customer recom based of terms
 let lastPickId = '';
 const pickerForm = document.getElementById('picker-form');
 const pickerResult = document.getElementById('picker-result');

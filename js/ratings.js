@@ -1,8 +1,8 @@
-//list poling
 const ratingSearch = document.getElementById('rating-search');
 const ratingSort = document.getElementById('rating-sort');
 
 function sortMovies(items, sortBy) {
+    // Copy the array so sorting this table cannot reorder the shared collection.
     const sorted = items.slice();
     sorted.sort(function (a, b) {
         if (sortBy === 'title') return getMovieTitle(a).localeCompare(getMovieTitle(b));

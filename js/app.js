@@ -1,3 +1,4 @@
+// Shared behavior used by all five pages. No build step is needed.
 const isEnglish = document.documentElement.lang === 'en';
 const favoriteKey = 'cinepick-favorites';
 let favoriteIds = [];
