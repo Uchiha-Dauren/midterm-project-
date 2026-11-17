@@ -28,6 +28,11 @@ function createMovieCard(movie) {
             </div>
             <details class="movie-description"><summary>${t('Фильм туралы', 'About this film')}</summary><p>${movie.plot[isEnglish ? 'en' : 'kk']}</p><p>${t('Режиссер', 'Director')}: ${movie.director}<br>${movie.runtime} ${t('мин', 'min')}</p></details>
         </div>`;
+    const journalLink = document.createElement('a');
+    journalLink.className = 'journal-shortcut';
+    journalLink.textContent = t('Күнделікке қосу', 'Add to journal');
+    journalLink.href = pageUrl('journal') + '?' + new URLSearchParams({title: getMovieTitle(movie), year: movie.year, runtime: movie.runtime});
+    card.querySelector('.card-body').append(journalLink);
     return card;
 }
 
@@ -62,6 +67,16 @@ function renderMovies() {
 
 function setCollection(showSaved) {
     savedOnly = showSaved;
+    const url = new URL(window.location.href);
+    if (showSaved) url.searchParams.set('view', 'saved');
+    else url.searchParams.delete('view');
+    history.replaceState(null, '', url);
+    document.querySelectorAll('.language-switch a').forEach(link => {
+        const target = new URL(link.href);
+        if (showSaved) target.searchParams.set('view', 'saved');
+        else target.searchParams.delete('view');
+        link.href = target.href;
+    });
     const allTab = document.getElementById('tab-all');
     const savedTab = document.getElementById('tab-saved');
     allTab.classList.toggle('is-active', !showSaved);

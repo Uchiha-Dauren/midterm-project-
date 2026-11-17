@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="kk">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta content="Жақсы фильм таңда. IMDb мен Кинопоиск бағаларын салыстыр. Келесі оқиғаңды осы жерден тап." name="description"/>
+<title>Күнделік — CinePick</title>
+<link href="data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 40 40%22%3E%3Crect width=%2240%22 height=%2240%22 rx=%228%22 fill=%22%23f5cc3b%22/%3E%3Cpath d=%22M27 11H13v18h14M18 16h9M18 24h9%22 fill=%22none%22 stroke=%22%2314171b%22 stroke-width=%224%22/%3E%3C/svg%3E" rel="icon" type="image/svg+xml"/>
+<link href="journal.html" hreflang="kk" rel="alternate"/>
+<link href="journal-en.html" hreflang="en" rel="alternate"/>
+<link href="vendor/bootstrap.min.css" rel="stylesheet"/>
+<link href="css/style.css" rel="stylesheet"/>
+<link href="css/endterm.css" rel="stylesheet"/>
+<link href="css/journal.css" rel="stylesheet"/>
+<link href="css/final.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#main">Мазмұнға өту</a>
+<header class="site-header">
+<nav aria-label="Негізгі мәзір" class="container nav-shell">
+<a class="brand" href="index.html"><span aria-hidden="true" class="brand-symbol">C</span>CINEPICK<span class="brand-dot">.</span></a>
+<ul class="nav-links" id="main-nav"><li><a href="index.html">Басты бет</a></li>
+<li><a href="movies.html">Фильмдер</a></li>
+<li><a href="picks.html">Біздің таңдау</a></li>
+<li><a href="ratings.html">Рейтингтер</a></li>
+<li><a href="discover.html">Ghibli</a></li>
+<li><a aria-current="page" href="journal.html">Күнделік</a></li>
+<li><a href="about.html">Біз туралы</a></li>
+</ul>
+<div class="nav-actions">
+<button aria-label="Тақырыпты ауыстыру" aria-pressed="false" class="theme-toggle" type="button">☀</button>
+<div aria-label="Тіл" class="language-switch"><a aria-current="true" href="journal.html" hreflang="kk" lang="kk">ҚАЗ</a><a href="journal-en.html" hreflang="en" lang="en">ENG</a></div>
+<button aria-controls="main-nav" aria-expanded="false" aria-label="Мәзірді ашу" class="menu-toggle" type="button"><svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" viewbox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"></path></svg></button>
+</div>
+</nav>
+</header>
+<main class="container" id="main">
+<section class="journal-intro"><div class="page-heading"><p class="eyebrow">CINEPICK</p><h1>Менің кинокүнделігім</h1><p>Көруді жоспарлаңыз, баға мен ойыңызды сақтаңыз.</p></div><a class="btn btn-outline" href="discover.html">Фильм табу</a></section>
+<div id="journal-message" class="journal-message" role="status" aria-live="polite" hidden></div>
+<section aria-label="Көру статистикасы" class="journal-stats"><div class="journal-stat"><span>Барлық жазба</span><strong id="stats-total">0</strong><small>Жеке кино тізіміңіз</small></div><div class="journal-stat"><span>Көрілді</span><strong id="stats-watched">0</strong><small>Аяқталған фильмдер</small></div><div class="journal-stat"><span>Орташа баға</span><strong id="stats-average">0</strong><small>10 балдан</small></div><div class="journal-stat"><span>Көру уақыты</span><strong id="stats-minutes">0</strong><small>Ұзақтығы көрсетілген фильмдер</small></div></section>
+<section class="journal-chart"><h2>Көру барысы</h2><div class="journal-chart-row" data-status="planned"><span>Жоспарда</span><div class="journal-track" aria-hidden="true"><span class="journal-bar" id="bar-planned"></span></div><output id="count-planned">0</output></div><div class="journal-chart-row" data-status="watching"><span>Көріп жатырмын</span><div class="journal-track" aria-hidden="true"><span class="journal-bar" id="bar-watching"></span></div><output id="count-watching">0</output></div><div class="journal-chart-row" data-status="watched"><span>Көрілді</span><div class="journal-track" aria-hidden="true"><span class="journal-bar" id="bar-watched"></span></div><output id="count-watched">0</output></div></section>
+<div class="journal-workspace">
+<form id="journal-form" class="journal-editor" novalidate><h2 id="journal-editor-title">Жаңа жазба</h2>
+<p class="journal-hint">Деректер осы браузерде сақталады. Көрілген фильмге баға мен күн қажет.</p>
+<div class="journal-field"><label class="form-label" for="journal-title">Фильм атауы</label><input class="form-control" id="journal-title" name="title" type="text" maxlength="150" required aria-describedby="journal-title-error"><p class="journal-field-error" id="journal-title-error" aria-live="polite"></p></div><div class="journal-fields-row"><div class="journal-field"><label class="form-label" for="journal-year">Шыққан жылы</label><input class="form-control" id="journal-year" name="year" type="number" min="1888" step="1" aria-describedby="journal-year-error"><p class="journal-field-error" id="journal-year-error" aria-live="polite"></p></div><div class="journal-field"><label class="form-label" for="journal-runtime">Ұзақтығы, минут</label><input class="form-control" id="journal-runtime" name="runtime" type="number" min="1" max="1440" step="1" aria-describedby="journal-runtime-error"><p class="journal-field-error" id="journal-runtime-error" aria-live="polite"></p></div></div>
+<div class="journal-field"><label class="form-label" for="journal-status">Күйі</label><select class="form-select" name="status" id="journal-status" aria-describedby="journal-status-error"><option value="planned">Жоспарда</option><option value="watching">Көріп жатырмын</option><option value="watched">Көрілді</option></select><p id="journal-status-error" class="journal-field-error" aria-live="polite"></p></div>
+<div id="journal-watched-fields" hidden><div class="journal-field"><label class="form-label" for="journal-rating">Менің бағам, 1–10</label><input class="form-control" id="journal-rating" name="rating" type="number" min="1" max="10" step="1" aria-describedby="journal-rating-error"><p class="journal-field-error" id="journal-rating-error" aria-live="polite"></p></div><div class="journal-field"><label class="form-label" for="journal-watchedOn">Көрген күн</label><input class="form-control" id="journal-watchedOn" name="watchedOn" type="date" min="1888-01-01" aria-describedby="journal-watchedOn-error"><p class="journal-field-error" id="journal-watchedOn-error" aria-live="polite"></p></div></div>
+<div class="journal-field"><label class="form-label" for="journal-note">Ойлар мен жазбалар</label><textarea class="form-control" name="note" id="journal-note" rows="4" aria-describedby="journal-note-error journal-note-count"></textarea><p class="journal-hint" id="journal-note-count">0 / 1000</p><p class="journal-field-error" id="journal-note-error" aria-live="polite"></p></div>
+<div class="journal-form-actions"><button class="btn btn-accent" type="submit" id="journal-save">Сақтау</button><button class="btn btn-outline" type="button" id="journal-cancel" hidden>Бас тарту</button></div></form>
+<section aria-label="Жазбалар">
+<div class="journal-toolbar"><div><label for="journal-search">Жазбаларды іздеу</label><input class="form-control" type="search" id="journal-search" placeholder="Атау немесе жазба…"></div><div><label for="journal-filter">Күйі</label><select class="form-select" id="journal-filter"><option value="all">Барлығы</option><option value="planned">Жоспарда</option><option value="watching">Көріп жатырмын</option><option value="watched">Көрілді</option></select></div><div><label for="journal-sort">Сұрыптау</label><select class="form-select" id="journal-sort"><option value="updated">Жақында өзгерген</option><option value="title">Атауы</option><option value="rating">Жоғары баға</option></select></div></div>
+<div class="journal-results-header"><p id="journal-count" aria-live="polite"></p><button type="button" class="text-link" id="journal-clear">Барлығын өшіру</button></div><div class="journal-entries" id="journal-entries"></div></section></div>
+<dialog class="journal-dialog" id="journal-dialog" aria-labelledby="journal-dialog-title"><h2 id="journal-dialog-title">Өшіруді растау</h2><p id="journal-dialog-text"></p><form method="dialog"><button class="btn btn-outline" value="cancel" autofocus>Бас тарту</button><button class="btn btn-accent" value="delete">Өшіру</button></form></dialog>
+<noscript><p>Күнделік үшін JavaScript қосыңыз.</p></noscript></main>
+<footer class="site-footer"><div class="container footer-inner"><div><a class="brand footer-brand" href="index.html">CINEPICK<span class="brand-dot">.</span></a><p>Жақсы кино. Оңай таңдау.</p></div><div class="footer-meta"><a href="about.html#sources">Сақталған рейтингтер · 02.10.2026</a><p>Оқу жобасы · 2026</p></div></div></footer>
+<div aria-atomic="true" aria-live="polite" class="toast-area" role="status"></div>
+<script defer="" src="vendor/jquery-3.7.1.min.js"></script>
+<script defer="" src="vendor/bootstrap.bundle.min.js"></script>
+<script defer="" src="js/data.js"></script>
+<script defer="" src="js/app.js"></script>
+<script defer="" src="js/journal-store.js"></script>
+<script defer="" src="js/journal.js"></script>
+</body>
+</html>

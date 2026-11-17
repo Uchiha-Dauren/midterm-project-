@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (button) toggleFavorite(button.dataset.favorite);
     });
     window.addEventListener('storage', event => {
-        if (event.key !== favoriteKey) return;
+        if (event.key !== favoriteKey && event.key !== null) return;
         try {
             const saved = JSON.parse(event.newValue || '[]');
             favoriteIds = Array.isArray(saved) ? [...new Set(saved.filter(id => movies.some(movie => movie.id === id)))] : [];
